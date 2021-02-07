@@ -6,6 +6,26 @@ on:
       - main
 
 jobs:
+  processing_server15:
+    name: Proses Website Server15
+    runs-on: server15
+    defaults:
+      run:
+        shell: bash
+        working-directory: /home/server15/www/aerobot/dist
+    steps:
+      - name: Ambil repositori terbaru
+        run: |
+          git version
+          git pull https://github.com/bbta3-bppt/aerobot.git
+      - name: Bangun python environment
+        env:
+          APP_NAME: ${{ secrets.APP_NAME }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: |
+          echo $APP_NAME
+          /usr/bin/python3 -V
+
   update_release_draft:
     runs-on: ubuntu-latest
     steps:
