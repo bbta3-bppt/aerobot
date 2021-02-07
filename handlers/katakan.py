@@ -12,7 +12,7 @@ async def katakansebenarnya(message: types.Message):
 
 async def siapapembuat(message: types.Message):
     await message.reply(md.text(
-        md.text('Baik, Baik, AeroBot dibuat oleh perekayas yang bermarkas di'), md.bold('AEROTRONIKA\n\n'),
+        md.text('Baik, Baik, AeroBot dibuat oleh perekayasa yang bermarkas di'), md.bold('AEROTRONIKA\n\n'),
         md.text('Untuk selangkapnya dapat melirik'),
         md.italic('Source Code'),
         md.link('AeroBot', 'https://github.com/bbta3-bppt/aerobot')
