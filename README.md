@@ -9,4 +9,5 @@ Fitur yang dimiliki AeroBot saat ini masih sedikit. Apabila dirasakan perlu pena
 Sebelum melakukan pengembangan AeroBot, Siapkan _Environment Variable_ yang dibutuhkan sebagai berikut:
 ```
 BOT_TOKEN=token_bot_setalah_daftar
+CHAT_ID=123456789
 ```
