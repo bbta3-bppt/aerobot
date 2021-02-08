@@ -2,7 +2,7 @@ from os import getenv
 import requests
 
 TOKEN = getenv('BOT_TOKEN')
-CHAT_ID = getenv('CHAT_ID_ME')
+CHAT_ID = getenv('CHAT_ID')
 API_URL = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
 if __name__ == '__main__':
